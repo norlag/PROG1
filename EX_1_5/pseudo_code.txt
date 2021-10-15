@@ -1,0 +1,18 @@
+string message_resultat;
+double DistanceTravailMaison;
+double TarifBilletTrain;
+double ConsoVoitureAuCent;
+double PrixEssence;
+double PrixAmortissementVoiture;
+
+double PrixEssenceAuCent = ConsoVoitureAuCent * PrixEssence
+double PrixVoiture = (PrixAmortissementVoiture * DistanceTravailMaison) + (DistanceTravailMaison / PrixEssenceAuCent)
+
+si PrixVoiture < TarifBilletTrain
+  message_resultat = "La voiture coute moins cher"
+sinon si PrixVoiture > TarifBilletTrain
+  message_resultat = "Le train coute moins cher"
+sinon
+  message_resultat = "Les deux ont le meme cout"
+
+affiche message_resultat sur la console

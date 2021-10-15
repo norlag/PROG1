@@ -1,0 +1,3 @@
+/run/media/seb/Windows/Users/Sebastian/Mon Drive/Cours/HEIG/PROG1/labo_taxi/cmake-build-debug/CMakeFiles/edit_cache.dir
+/run/media/seb/Windows/Users/Sebastian/Mon Drive/Cours/HEIG/PROG1/labo_taxi/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/run/media/seb/Windows/Users/Sebastian/Mon Drive/Cours/HEIG/PROG1/labo_taxi/cmake-build-debug/CMakeFiles/labo_taxi.dir

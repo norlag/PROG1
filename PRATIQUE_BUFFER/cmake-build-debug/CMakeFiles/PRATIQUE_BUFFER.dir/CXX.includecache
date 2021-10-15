@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/Sebastian/Mon Drive/Cours/HEIG/PROG1/PRATIQUE_BUFFER/main.cpp
+iostream
+-
+cstdlib
+-
+limits
+-
+string
+-
+

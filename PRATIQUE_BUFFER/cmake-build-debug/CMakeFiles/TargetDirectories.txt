@@ -1,0 +1,3 @@
+C:/Users/Sebastian/Mon Drive/Cours/HEIG/PROG1/PRATIQUE_BUFFER/cmake-build-debug/CMakeFiles/PRATIQUE_BUFFER.dir
+C:/Users/Sebastian/Mon Drive/Cours/HEIG/PROG1/PRATIQUE_BUFFER/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Sebastian/Mon Drive/Cours/HEIG/PROG1/PRATIQUE_BUFFER/cmake-build-debug/CMakeFiles/rebuild_cache.dir

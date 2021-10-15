@@ -1,0 +1,3 @@
+"C:\Program Files\JetBrains\CLion 2021.2.2\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\EX.dir/objects.a
+C:\PROGRA~1\mingw64\bin\ar.exe cr CMakeFiles\EX.dir/objects.a @CMakeFiles\EX.dir\objects1.rsp
+C:\PROGRA~1\mingw64\bin\G__~1.EXE -Wall -Wextra -Wconversion -Wsign-conversion -pedantic -g -Wl,--whole-archive CMakeFiles\EX.dir/objects.a -Wl,--no-whole-archive -o EX.exe -Wl,--out-implib,libEX.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\EX.dir\linklibs.rsp

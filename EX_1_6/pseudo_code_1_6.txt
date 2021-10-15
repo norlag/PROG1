@@ -1,0 +1,11 @@
+double solde, interet_annuel;
+double interet_mensuel = interet_annuel / 12;
+double montant_retrait;
+unsigned int mois_avant_decouvert = 0;
+
+tant qu'il reste de l'argent sur le compte
+	1. incrémente mois_avant_decouvert de 1
+	2. ajoute au solde l'intérêt mensuel
+	3. retire au solde le montant du retrait spécifié
+
+affiche à l'utilisateur mois_avant_decouvert

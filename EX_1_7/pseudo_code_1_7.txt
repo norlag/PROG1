@@ -1,0 +1,20 @@
+1. Affiche un message de bienvenue et demande à l'utilisateur d'entrer le montant inital du compte
+2. Demande à l'utilisateur d'entrer le taux d'intérêt annuel
+3. Demande à l'utilisateur d'entrer le montant de retrait mensuel
+4. Si toutes les valeurs entrées sont valides, passe au point suivant, sinon, affiche un message d'erreur
+5. Calcul des mois avant que le compte ne soit à découvert
+6. Affiche le résultat à l'utilisateur et fin du programme
+
+Pseudo code du calcul au point 5.
+
+double solde, interet_annuel;
+double interet_mensuel = interet_annuel / 12;
+double montant_retrait;
+unsigned int mois_avant_decouvert = 0;
+
+tant qu'il reste de l'argent sur le compte
+	1. incrémente mois_avant_decouvert de 1
+	2. ajoute au solde l'intérêt mensuel
+	3. retire au solde le montant du retrait spécifié
+
+affiche à l'utilisateur mois_avant_decouvert

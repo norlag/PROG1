@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/Sebastian/Mon Drive/Cours/HEIG/PROG1/ExercicesCpp/main.cpp
+cstdlib
+-
+iomanip
+-
+iostream
+-
+

@@ -1,0 +1,23 @@
+1) Demande de saisie des 5 paramètres à l'utilisateur
+2) Calcul des différents volumes de la bouteille
+3) Affiche à l'utilisateur la contenance en litres de la bouteille
+
+Détail du calcul du volume de la bouteille :
+
+double rayon_1, rayon_2;
+double hauteur_1, hauteur_2, hauteur_3;
+
+// Entrée de l'utilisateur ici
+
+// Calcul du cylindre du haut :
+double surface_cercle_haut = PI * rayon_2 ^ 2
+double volume_cylindre_haut = surface_cercle_haut * hauteur_2;
+
+// Calcul du cône :
+double volume_cone = PI / 3 * (rayon_1 ^ 2 + rayon_2 ^ 2 + rayon_1 * rayon_2) * hauteur_3;
+
+// Calcul du cylindre du bas :
+double surface_cercle_bas = PI * rayon_1 ^ 2;
+double volume_cylindre_bas = surface_cercle_bas * hauteur_1;
+
+Affichage du volume total càd : volume_cylindre_haut + volume_cone + volume_cylindre_bas / 1000
