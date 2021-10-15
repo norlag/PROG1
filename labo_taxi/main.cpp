@@ -3,48 +3,48 @@
   Fichier     : .cpp
   Nom du labo : PROG1
   Auteur(s)   : Sebastian Schneider
-  Date        : 14.10.21
-  But         :
+  Date        : 15.10.21
+  But         : Calculer le coût d'un trajet en taxi en fonction du nbr de bagages, de la distance à parcourir et de la vitesse
   Remarque(s) : Aucune
   Compilateur : MinGW-W64 8.1.0
   ---------------------------------------------------------------------------
 */
 
-#include <iostream>
-#include <limits>
-#include <iomanip>  // setprecision, setw
+#include <iostream>	// cin, cout
+#include <limits>		// numeric_limits
+#include <iomanip>	// setprecision, setw
 
 using namespace std;
 
 int main() {
 	int nombre_de_bagages, heure_de_depart;
 	double distance_a_parcourir, vitesse_moyenne;
-	double supplement_bagage, prix_course, prix_total, duree_course, tarif; // Variables de calcul
+	double supplement_bagage, prix_course, prix_total, duree_course, tarif_applicable; // Variables de calcul
 
-	const double SURTAXE_BAGAGE = 2.5,
+	constexpr double SURTAXE_BAGAGE = 2.5,
 	PRISE_EN_CHARGE = 5.0,
 	TARIF_MINUTE_JOUR = 1.0,
-	VITESSE_MIN = 50,
-	VITESSE_MAX = 120,
-	DISTANCE_MIN_PARCOURS = 0,
-	DISTANCE_MAX_PARCOURS = 500,
 	TARIF_MINUTE_NUIT = 1.6;
 
-	const unsigned int DEBUT_TARIF_JOUR = 8,
+	constexpr unsigned int DEBUT_TARIF_JOUR = 8,
 	FIN_TARIF_JOUR = 20,
 	NBRE_MIN_BAGAGES = 0,
 	NBRE_MAX_BAGAGES = 4,
 	HEURES_MIN = 0,
 	HEURES_MAX = 23,
+	VITESSE_MIN = 50,
+	VITESSE_MAX = 120,
+	DISTANCE_MIN_PARCOURS = 0,
+	DISTANCE_MAX_PARCOURS = 500,
 	MIN_DANS_HEURE = 60;
 
-	cout << fixed << setprecision(2); // Deux chiffres après la virgule
+	cout << fixed << setprecision(2);	// Deux chiffres après la virgule
 
-	const unsigned int ESP_TXT = 35;
+	const unsigned int ESP_TXT = 35;		// Espacement du texte pour l'affichage
 
-	cout	<< "Bonjour, ce programme a pour but de ..." << endl
+	cout	<< "Bonjour, ce programme a pour but de calculer le coût de votre trajet en taxi" << endl
 			<< "Voici les conditions" << endl
-			<< "=======================================" << endl
+			<< "=================================================" << endl
 			<< setw(ESP_TXT) << left << "- Prise en charge : " << right << PRISE_EN_CHARGE << endl
 			<< setw(ESP_TXT) << left << "- Supplement par bagage : " << right << SURTAXE_BAGAGE << endl
 			<< setw(ESP_TXT) << left << "- Tarif/min (jour) : " << right << TARIF_MINUTE_JOUR << endl
@@ -54,10 +54,10 @@ int main() {
 	cout << endl;
 
 	cout	<< "Votre commande" << endl
-			<< "=======================================" << endl;
+			<< "=================================================" << endl;
 
 	// Saisie "nombre de bagages"
-	cout	<< "- Nombre de bagage [" << NBRE_MIN_BAGAGES << " - " << NBRE_MAX_BAGAGES << "] :";
+	cout << setw(ESP_TXT) << left << "- Nombre de bagage" << right << "[" << NBRE_MIN_BAGAGES << " - " << NBRE_MAX_BAGAGES << "] :";
 	cin >> nombre_de_bagages;
 	cin.ignore(numeric_limits<streamsize>::max(), '\n');
 
@@ -69,7 +69,7 @@ int main() {
 	}
 
 	// Saisie "distance"
-	cout	<< "- Distance [km] [" << DISTANCE_MIN_PARCOURS << " - " << DISTANCE_MAX_PARCOURS << "] :";
+	cout << setw(ESP_TXT) << left << "- Distance [km]" << right << "[" << DISTANCE_MIN_PARCOURS << " - " << DISTANCE_MAX_PARCOURS << "] :";
 	cin >> distance_a_parcourir;
 	cin.ignore(numeric_limits<streamsize>::max(), '\n');
 
@@ -81,7 +81,7 @@ int main() {
 	}
 
 	// Saisie "vitesse"
-	cout	<< "- Vitesse [km/h] [" << VITESSE_MIN << " - " << VITESSE_MAX << "] :";
+	cout << setw(ESP_TXT) << left << "- Vitesse [km/h]" << right << "[" << VITESSE_MIN << " - " << VITESSE_MAX << "] :";
 	cin >> vitesse_moyenne;
 	cin.ignore(numeric_limits<streamsize>::max(), '\n');
 
@@ -93,7 +93,7 @@ int main() {
 	}
 
 	// Saisie "Heure de depart"
-	cout	<< "- Heure de depart [" << HEURES_MIN << " - " << HEURES_MAX << "] :";
+	cout << setw(ESP_TXT) << left << "- Heure de depart" << right << "[" << HEURES_MIN << " - " << HEURES_MAX << "] :";
 	cin >> heure_de_depart;
 	cin.ignore(numeric_limits<streamsize>::max(), '\n');
 
@@ -106,29 +106,27 @@ int main() {
 
 	cout << endl;
 
-	// Calculs pour le ticket
-	supplement_bagage = nombre_de_bagages * SURTAXE_BAGAGE;
+	supplement_bagage = nombre_de_bagages * SURTAXE_BAGAGE;				// Coût des bagages en supplément
+	duree_course = distance_a_parcourir / vitesse_moyenne;				// Durée de la course en heures
+	tarif_applicable = (heure_de_depart >= DEBUT_TARIF_JOUR && heure_de_depart < FIN_TARIF_JOUR) ?
+		TARIF_MINUTE_JOUR : TARIF_MINUTE_NUIT;									// Obtient le tarif à appliquer en fct. de l'heure de départ
 
-	// Durée de la course en heures
-	duree_course = distance_a_parcourir / vitesse_moyenne;
+	prix_course = duree_course * MIN_DANS_HEURE * tarif_applicable;	// Prix de la course
+	prix_total = PRISE_EN_CHARGE + supplement_bagage + prix_course;	// Prix total
 
-	tarif = heure_de_depart >= DEBUT_TARIF_JOUR && heure_de_depart < FIN_TARIF_JOUR ? TARIF_MINUTE_JOUR : TARIF_MINUTE_NUIT ;
+	cout << "Votre ticket" << endl
+			<< "=================================================" << endl;
 
-	// Calcul prix de la course
-	//prix_course = duree_course * MIN_DANS_HEURE * tarif : duree_course * MIN_DANS_HEURE * tarif; // TODO
-
-	prix_total = PRISE_EN_CHARGE + supplement_bagage + prix_course; // TODO : calcul prix total
-
-	cout	<< "Votre ticket" << endl
-			<< "=======================================" << endl;
+	cout << setw(ESP_TXT) << left << "- Prise en charge : " << right << PRISE_EN_CHARGE << endl;
 
 	if (nombre_de_bagages > 0)
-		cout << "- Supplement bagages : " << supplement_bagage << endl;
+		cout << setw(ESP_TXT) << left << "- Supplement bagages : " << right << supplement_bagage << endl;
 
-	cout << "- Prix de la course : " << prix_course << endl;
-	cout << "TOTAL : " << prix_total << endl;
+	cout << setw(ESP_TXT) << left << "- Prix de la course : " << right << prix_course << endl;
+	cout << setw(ESP_TXT) << right << "TOTAL : " << prix_total << endl << endl;
 
-	cout << "presser ENTER pour quitter" << endl;
+	// Fin du programme
+	cout << "Presser ENTER pour quitter" << endl;
 	cin.ignore(numeric_limits<streamsize>::max(), '\n');
 
 	return 0;

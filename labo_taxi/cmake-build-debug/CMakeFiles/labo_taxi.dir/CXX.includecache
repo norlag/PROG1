@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/run/media/seb/Windows/Users/Sebastian/Mon Drive/Cours/HEIG/PROG1/labo_taxi/main.cpp
+/home/seb/Documents/PROG1/labo_taxi/main.cpp
 iostream
 -
 limits

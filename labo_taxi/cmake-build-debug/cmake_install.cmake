@@ -1,4 +1,4 @@
-# Install script for directory: /run/media/seb/Windows/Users/Sebastian/Mon Drive/Cours/HEIG/PROG1/labo_taxi
+# Install script for directory: /home/seb/Documents/PROG1/labo_taxi
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/run/media/seb/Windows/Users/Sebastian/Mon Drive/Cours/HEIG/PROG1/labo_taxi/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/seb/Documents/PROG1/labo_taxi/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

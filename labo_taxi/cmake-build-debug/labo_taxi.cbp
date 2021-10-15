@@ -8,38 +8,38 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/run/media/seb/Windows/Users/Sebastian/Mon Drive/Cours/HEIG/PROG1/labo_taxi/cmake-build-debug"/>
+				<Option working_dir="/home/seb/Documents/PROG1/labo_taxi/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/run/media/seb/Windows/Users/Sebastian/Mon\ Drive/Cours/HEIG/PROG1/labo_taxi/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/run/media/seb/Windows/Users/Sebastian/Mon\ Drive/Cours/HEIG/PROG1/labo_taxi/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/run/media/seb/Windows/Users/Sebastian/Mon\ Drive/Cours/HEIG/PROG1/labo_taxi/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/run/media/seb/Windows/Users/Sebastian/Mon\ Drive/Cours/HEIG/PROG1/labo_taxi/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/seb/Documents/PROG1/labo_taxi/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/seb/Documents/PROG1/labo_taxi/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/seb/Documents/PROG1/labo_taxi/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/seb/Documents/PROG1/labo_taxi/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/run/media/seb/Windows/Users/Sebastian/Mon Drive/Cours/HEIG/PROG1/labo_taxi/cmake-build-debug"/>
+				<Option working_dir="/home/seb/Documents/PROG1/labo_taxi/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/run/media/seb/Windows/Users/Sebastian/Mon\ Drive/Cours/HEIG/PROG1/labo_taxi/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/run/media/seb/Windows/Users/Sebastian/Mon\ Drive/Cours/HEIG/PROG1/labo_taxi/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/run/media/seb/Windows/Users/Sebastian/Mon\ Drive/Cours/HEIG/PROG1/labo_taxi/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/run/media/seb/Windows/Users/Sebastian/Mon\ Drive/Cours/HEIG/PROG1/labo_taxi/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/seb/Documents/PROG1/labo_taxi/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/seb/Documents/PROG1/labo_taxi/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/seb/Documents/PROG1/labo_taxi/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/seb/Documents/PROG1/labo_taxi/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/run/media/seb/Windows/Users/Sebastian/Mon Drive/Cours/HEIG/PROG1/labo_taxi/cmake-build-debug"/>
+				<Option working_dir="/home/seb/Documents/PROG1/labo_taxi/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/run/media/seb/Windows/Users/Sebastian/Mon\ Drive/Cours/HEIG/PROG1/labo_taxi/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/run/media/seb/Windows/Users/Sebastian/Mon\ Drive/Cours/HEIG/PROG1/labo_taxi/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/run/media/seb/Windows/Users/Sebastian/Mon\ Drive/Cours/HEIG/PROG1/labo_taxi/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/run/media/seb/Windows/Users/Sebastian/Mon\ Drive/Cours/HEIG/PROG1/labo_taxi/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/seb/Documents/PROG1/labo_taxi/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/seb/Documents/PROG1/labo_taxi/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/seb/Documents/PROG1/labo_taxi/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/seb/Documents/PROG1/labo_taxi/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="labo_taxi">
-				<Option output="/run/media/seb/Windows/Users/Sebastian/Mon Drive/Cours/HEIG/PROG1/labo_taxi/cmake-build-debug/labo_taxi" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/run/media/seb/Windows/Users/Sebastian/Mon Drive/Cours/HEIG/PROG1/labo_taxi/cmake-build-debug"/>
+				<Option output="/home/seb/Documents/PROG1/labo_taxi/cmake-build-debug/labo_taxi" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/seb/Documents/PROG1/labo_taxi/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -53,15 +53,15 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/run/media/seb/Windows/Users/Sebastian/Mon\ Drive/Cours/HEIG/PROG1/labo_taxi/cmake-build-debug/Makefile&quot;  VERBOSE=1 labo_taxi"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/run/media/seb/Windows/Users/Sebastian/Mon\ Drive/Cours/HEIG/PROG1/labo_taxi/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/run/media/seb/Windows/Users/Sebastian/Mon\ Drive/Cours/HEIG/PROG1/labo_taxi/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/run/media/seb/Windows/Users/Sebastian/Mon\ Drive/Cours/HEIG/PROG1/labo_taxi/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/seb/Documents/PROG1/labo_taxi/cmake-build-debug/Makefile&quot;  VERBOSE=1 labo_taxi"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/seb/Documents/PROG1/labo_taxi/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/seb/Documents/PROG1/labo_taxi/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/seb/Documents/PROG1/labo_taxi/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="labo_taxi/fast">
-				<Option output="/run/media/seb/Windows/Users/Sebastian/Mon Drive/Cours/HEIG/PROG1/labo_taxi/cmake-build-debug/labo_taxi" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/run/media/seb/Windows/Users/Sebastian/Mon Drive/Cours/HEIG/PROG1/labo_taxi/cmake-build-debug"/>
+				<Option output="/home/seb/Documents/PROG1/labo_taxi/cmake-build-debug/labo_taxi" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/seb/Documents/PROG1/labo_taxi/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -75,17 +75,17 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/run/media/seb/Windows/Users/Sebastian/Mon\ Drive/Cours/HEIG/PROG1/labo_taxi/cmake-build-debug/Makefile&quot;  VERBOSE=1 labo_taxi/fast"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/run/media/seb/Windows/Users/Sebastian/Mon\ Drive/Cours/HEIG/PROG1/labo_taxi/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/run/media/seb/Windows/Users/Sebastian/Mon\ Drive/Cours/HEIG/PROG1/labo_taxi/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/run/media/seb/Windows/Users/Sebastian/Mon\ Drive/Cours/HEIG/PROG1/labo_taxi/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/seb/Documents/PROG1/labo_taxi/cmake-build-debug/Makefile&quot;  VERBOSE=1 labo_taxi/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/seb/Documents/PROG1/labo_taxi/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/seb/Documents/PROG1/labo_taxi/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/seb/Documents/PROG1/labo_taxi/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/run/media/seb/Windows/Users/Sebastian/Mon Drive/Cours/HEIG/PROG1/labo_taxi/main.cpp">
+		<Unit filename="/home/seb/Documents/PROG1/labo_taxi/main.cpp">
 			<Option target="labo_taxi"/>
 		</Unit>
-		<Unit filename="/run/media/seb/Windows/Users/Sebastian/Mon Drive/Cours/HEIG/PROG1/labo_taxi/CMakeLists.txt">
+		<Unit filename="/home/seb/Documents/PROG1/labo_taxi/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>
