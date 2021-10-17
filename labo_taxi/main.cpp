@@ -1,6 +1,6 @@
 /*
   ---------------------------------------------------------------------------
-  Fichier     : .cpp
+  Fichier     : labo_taxi.cpp
   Nom du labo : PROG1
   Auteur(s)   : Sebastian Schneider
   Date        : 15.10.21
@@ -40,7 +40,7 @@ int main() {
 
 	cout << fixed << setprecision(2);	// Deux chiffres après la virgule
 
-	const unsigned int ESP_TXT = 35;		// Espacement du texte pour l'affichage
+	const unsigned int ESP_TXT = 35;			// Espacement du texte pour l'affichage
 
 	cout	<< "Bonjour, ce programme a pour but de calculer le coût de votre trajet en taxi" << endl
 			<< "Voici les conditions" << endl
@@ -65,6 +65,8 @@ int main() {
 	if(cin.fail() || nombre_de_bagages < NBRE_MIN_BAGAGES || nombre_de_bagages > NBRE_MAX_BAGAGES)
 	{
 		cout << "Erreur ! La valeur saisie n'est pas valide" << endl;
+		cout << "Presser ENTER pour quitter" << endl;
+		cin.ignore(numeric_limits<streamsize>::max(), '\n');
 		return 1;
 	}
 
@@ -77,6 +79,8 @@ int main() {
 	if(cin.fail() || distance_a_parcourir < DISTANCE_MIN_PARCOURS || distance_a_parcourir > DISTANCE_MAX_PARCOURS)
 	{
 		cout << "Erreur ! La valeur saisie n'est pas valide" << endl;
+		cout << "Presser ENTER pour quitter" << endl;
+		cin.ignore(numeric_limits<streamsize>::max(), '\n');
 		return 1;
 	}
 
@@ -89,6 +93,8 @@ int main() {
 	if(cin.fail() || vitesse_moyenne < VITESSE_MIN || vitesse_moyenne > VITESSE_MAX)
 	{
 		cout << "Erreur ! La valeur saisie n'est pas valide" << endl;
+		cout << "Presser ENTER pour quitter" << endl;
+		cin.ignore(numeric_limits<streamsize>::max(), '\n');
 		return 1;
 	}
 
@@ -101,6 +107,8 @@ int main() {
 	if(cin.fail() || heure_de_depart < HEURES_MIN || heure_de_depart > HEURES_MAX)
 	{
 		cout << "Erreur ! La valeur saisie n'est pas valide" << endl;
+		cout << "Presser ENTER pour quitter" << endl;
+		cin.ignore(numeric_limits<streamsize>::max(), '\n');
 		return 1;
 	}
 

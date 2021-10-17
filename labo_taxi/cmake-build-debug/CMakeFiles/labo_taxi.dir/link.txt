@@ -1,1 +1,3 @@
-/usr/bin/c++ -g CMakeFiles/labo_taxi.dir/main.cpp.o -o labo_taxi 
+"C:\Program Files\JetBrains\CLion 2021.2.2\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\labo_taxi.dir/objects.a
+C:\PROGRA~1\mingw64\bin\ar.exe cr CMakeFiles\labo_taxi.dir/objects.a @CMakeFiles\labo_taxi.dir\objects1.rsp
+C:\PROGRA~1\mingw64\bin\G__~1.EXE -g -Wl,--whole-archive CMakeFiles\labo_taxi.dir/objects.a -Wl,--no-whole-archive -o labo_taxi.exe -Wl,--out-implib,liblabo_taxi.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\labo_taxi.dir\linklibs.rsp
