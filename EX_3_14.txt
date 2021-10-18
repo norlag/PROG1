@@ -1,0 +1,38 @@
+#include <cstdlib>
+#include <iostream>
+using namespace std;
+int main() {
+ int n;
+
+ cout << "Donnez un entier : ";
+ cin >> n;
+
+ switch (n) {
+ case 0: cout << "A\n";
+ case 1:
+ case 2: cout << "B\n";
+ break;
+ case 3:
+ case 4:
+ case 5: cout << "C\n";
+ default: cout << "D\n";
+ }
+
+ return EXIT_SUCCESS;
+}
+
+/*
+Que va afficher le programme ci-dessus lorsque l'utilisateur entre comme valeur :
+1) 0
+2) 1
+3) 4
+4) 6
+5) -1
+
+1) AB
+2) B
+3) CD
+4) D
+5) D
+
+*/

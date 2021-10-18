@@ -1,0 +1,25 @@
+1) Après le mot réservé case on peut donner une liste de valeurs séparées par des virgules :
+non une seule valeur, et ça doit être une constante, plus précisément une valeur connue à la compilation
+2) Après le mot réservé case on peut donner un intervalle de valeurs :
+non, une seule constante
+3) La branche "default" peut venir n'importe où dans la liste des cas :
+oui
+4) Les cas dans les différentes branches doivent être donnés dans un ordre croissant des
+valeurs :
+peut importe l'ordre
+5) Les valeurs de cas peuvent être données par des variables :
+des variables constantes uniquement
+6) Si une branche comporte plusieurs instructions, il faut les mettre entre { } :
+?
+7) Toutes les valeurs possibles de l'expression doivent être prévues dans les différentes
+branches du switch :
+non pas forcément les autres valeurs tombent dans le default de toute façon
+8) Sans instruction particulière, après le traitement d'une branche, on passe à la branche
+suivante :
+oui sans le break il passe à la branche qui se trouve dessous
+9) Deux branches différentes peuvent comporter la même valeur de cas :
+non
+10) Une instruction switch peut toujours remplacer une instruction if :
+non le switch ne remplace pas les multiples conditions que l'on peut mettre dans un if
+11) Une instruction if peut toujours remplacer une instruction switch :
+oui

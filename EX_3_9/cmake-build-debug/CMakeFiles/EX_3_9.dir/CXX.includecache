@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/Sebastian/Mon Drive/Cours/HEIG/PROG1/EX_3_9/main.cpp
+/home/seb/Documents/PROG1/EX_3_9/main.cpp
 iostream
 -
 cstdlib
