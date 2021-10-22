@@ -1,3 +1,15 @@
+/*
+  ---------------------------------------------------------------------------
+  Fichier     : exercice_3_15.cpp
+  Nom du labo : PROG1
+  Auteur(s)   : Sebastian Schneider
+  Date        : 18.10.21
+  But         : Trouver si un nombre est divisible par 3 ou par 5
+  Remarque(s) : Aucune
+  Compilateur : MinGW-W64 8.1.0
+  ---------------------------------------------------------------------------
+*/
+
 #include <iostream>
 #include <limits>
 

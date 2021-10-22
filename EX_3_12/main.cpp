@@ -1,3 +1,15 @@
+/*
+  ---------------------------------------------------------------------------
+  Fichier     : exercice_3_12.cpp
+  Nom du labo : PROG1
+  Auteur(s)   : Sebastian Schneider
+  Date        : 18.10.21
+  But         : Calculer la moyenne de 4 note
+  Remarque(s) : Aucune
+  Compilateur : MinGW-W64 8.1.0
+  ---------------------------------------------------------------------------
+*/
+
 #include <iostream>
 #include <limits>
 #include <iomanip>

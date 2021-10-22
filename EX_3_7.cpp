@@ -12,7 +12,7 @@ if (j == 0) {
 
 // CORRECTION :
 
-b = !j || i / j > k;
+b = !j || i / j >= k;
 
 // 2)
 

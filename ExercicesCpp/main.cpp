@@ -17,19 +17,32 @@
 using namespace std;
 
 int main() {
-	int i = 5, j = 11;
-	double x;
+	int i, j;
 
-	x = (double) j / i;
-	cout << x << endl;
-	x = double (j / i);
-	cout << x << endl;
-	x = j / i + .5;
-	cout << x << endl;
-	x = (double) j / i + .5;
-	cout << x << endl;
-	x = (int) (j + .5) / i;
-	cout << x << endl;
+	i = 0;
+	while (i <= 5) i++;
+	cout << "A : i = " << i << endl;
+
+	i = j = 0;
+	while (i <= 5) i += j++;
+	cout << "B : i = " << i << " j = " << j << endl;
+
+	i = j = 0;
+	while (i <= 5) i += ++j;
+	cout << "C : i = " << i << " j = " << j << endl;
+
+	i = j = 0;
+	while (j <= 5) i += j++;
+	cout << "D : i = " << i << " j = " << j << endl;
+
+	i = j = 0;
+	while (j <= 5) i += ++j;
+	cout << "E : i = " << i << " j = " << j << endl;
+
+	i = j = 0;
+	while (i <= 5) i += 2; j++;
+	cout << "F : i = " << i << " j = " << j << endl;
+
 
 	return EXIT_SUCCESS;
 }
