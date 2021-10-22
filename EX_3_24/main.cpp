@@ -24,66 +24,62 @@ int main() {
 
 	// Variables
 	double coefficient_rebond, hauteur_balle, nbr_rebonds;
+	bool erreur;
 
 	cout << "Bonjour, ce programme a pour but de simuler le comportement d'une balle pour avoir sa hauteur après un nombre donné de rebonds" << endl;
 	cout << "Merci d'entrer les paramètres suivants : " << endl;
 
 	do {
 		cout << "Coefficient de rebond de la balle : ";
+		cin >> coefficient_rebond;
 
-		// Demande d'entrée de la part de l'utilisateur
-		if (not(cin >> coefficient_rebond))
-		{
-			// Remise à 0 du bit d'erreur et continue la boucle
+		// vérification
+		erreur = cin.fail() || !(coefficient_rebond >= COEFFICIENT_REBOND_MIN && coefficient_rebond < COEFFICIENT_REBOND_MAX);
+
+		if (erreur) {
+			cout << "Erreur, veuillez entrer un nombre réel plus grand ou égal à "
+				  << COEFFICIENT_REBOND_MIN << " et strictement plus petit que " << COEFFICIENT_REBOND_MAX << endl;
 			cin.clear();
-			cin.ignore(numeric_limits<streamsize>::max(),'\n');
-		}
-		else if (coefficient_rebond >= COEFFICIENT_REBOND_MIN && coefficient_rebond < COEFFICIENT_REBOND_MAX)
-		{
-			// Pas trouvé le moyen de ne pas répéter cette ligne, le cin.clear() doit être fait avant dans la branche d'erreur
-			cin.ignore(numeric_limits<streamsize>::max(), '\n');
-			break;
 		}
 
-		cout << "Erreur, veuillez entrer un nombre réel plus grand ou égal à "
-		<< COEFFICIENT_REBOND_MIN << " et strictement plus petit que " << COEFFICIENT_REBOND_MAX << endl;
-	} while (true);
+		// vider buffer
+		cin.ignore(numeric_limits<streamsize>::max(), '\n');
+
+	} while(erreur);
 
 	do {
 		cout << "Hauteur initiale : ";
+		cin >> hauteur_balle;
 
-		// Demande d'entrée de la part de l'utilisateur
-		if (not(cin >> hauteur_balle))
-		{
+		// vérification
+		erreur = cin.fail() || hauteur_balle < HAUTEUR_MIN;
+
+		if (erreur) {
+			cout << "Erreur, veuillez entrer un nombre réel plus grand ou égal à " << HAUTEUR_MIN << endl;
 			cin.clear();
-			cin.ignore(numeric_limits<streamsize>::max(),'\n');
-		}
-		else if (hauteur_balle >= HAUTEUR_MIN)
-		{
-			cin.ignore(numeric_limits<streamsize>::max(), '\n');
-			break;
 		}
 
-		cout << "Erreur, veuillez entrer un nombre réel plus grand ou égal à " << HAUTEUR_MIN << endl;
-	} while (true);
+		// vider buffer
+		cin.ignore(numeric_limits<streamsize>::max(), '\n');
+
+	} while(erreur);
 
 	do {
 		cout << "Nombre de rebonds : ";
+		cin >> nbr_rebonds;
 
-		// Demande d'entrée de la part de l'utilisateur
-		if (not(cin >> nbr_rebonds))
-		{
+		// vérification
+		erreur = cin.fail() || !(nbr_rebonds >= REBOND_MIN && nbr_rebonds == floor(nbr_rebonds));
+
+		if (erreur) {
+			cout << "Erreur, veuillez entrer un nombre naturel plus grand ou égal à " << REBOND_MIN << endl;
 			cin.clear();
-			cin.ignore(numeric_limits<streamsize>::max(),'\n');
-		}
-		else if (nbr_rebonds >= REBOND_MIN && nbr_rebonds == floor(nbr_rebonds))
-		{
-			cin.ignore(numeric_limits<streamsize>::max(), '\n');
-			break;
 		}
 
-		cout << "Erreur, veuillez entrer un nombre naturel plus grand ou égal à " << REBOND_MIN << endl;
-	} while (true);
+		// vider buffer
+		cin.ignore(numeric_limits<streamsize>::max(), '\n');
+
+	} while(erreur);
 
 	// Simulation
 	{
