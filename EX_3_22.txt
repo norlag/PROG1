@@ -1,0 +1,97 @@
+1) for (int i = 1; i <= 10; ++i)…
+i   i <= 10
+1   OK
+2   OK
+3   OK
+4   OK
+5   OK
+6   OK
+7   OK
+8   OK
+9   OK
+10  OK
+11  NOK
+(10 fois)
+
+2) for (int i = 0; i < 10; ++i)…
+i   i < 10
+0   OK
+1   OK
+2   OK
+3   OK
+4   OK
+5   OK
+6   OK
+7   OK
+8   OK
+9   OK
+10  NOK
+(10 fois)
+
+
+3) for (int i = 10; i > 0; --i)…
+i   i > 0
+10  OK
+9   OK
+8   OK
+7   OK
+6   OK
+5   OK
+4   OK
+3   OK
+2   OK
+1   OK
+0   NOK
+(10 fois)
+
+4) for (int i = -10; i <= 10; ++i)…
+i   i <= 10
+-10 OK
+-9  OK
+-8  OK
+-7  OK
+-6  OK
+-5  OK
+-4  OK
+...
+0   OK
+...
+8   OK
+9   OK
+10  OK
+11  NOK
+(21 fois)
+
+5) for (int i = 10; i >= 0; ++i)…
+i   i >= 0
+10  OK
+...
+inf OK
+
+6) for (int i = -10; i <= 10; i = i + 2)…
+i   i <= 10
+-10 OK
+-8  OK
+-6  OK
+-4  OK
+-2  OK
+0   OK
+2   OK
+4   OK
+6   OK
+8   OK
+10  OK
+12  NOK
+(11 fois)
+
+7) for (int i = -10; i <= 10; i = i + 3)…
+i   i <= 10
+-10 OK
+-7  OK
+-4  OK
+-1  OK
+2   OK
+5   OK
+8   OK
+11  NOK
+(7 fois)

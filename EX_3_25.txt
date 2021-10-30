@@ -1,0 +1,61 @@
+ 
+1) for (int i = 1; i <= 3; ++i) {
+ for (int j = 1; j <= 4; ++j) {
+    cout << "*";
+ }
+ cout << endl;
+}
+
+i   i<=3
+1   ok
+    j   j<=4    print
+    1   ok      *
+    2   ok      *
+    3   ok      *
+    4   ok      *
+    5   nok     -
+    print is ****
+2   ok
+    ...
+3   ok
+    ...
+4   nok
+
+final print is 3 x "****" + endl 
+
+
+2) for (int i = 0; i < 4; ++i) {
+ for (int j = 0; j < 3; ++j) {
+ cout << "*";
+ }
+ cout << endl;
+}
+
+3) for (int i = 1; i <= 4; ++i) {
+ for (int j = 1; j <= i; ++j) {
+ cout << "*";
+ }
+ cout << endl;
+}
+
+4) for (int i = 1; i <= 3; ++i) {
+ for (int j = 1; j <= 5; ++j) {
+ if (j % 2 == 0) {
+ cout << "*";
+ } else {
+ cout << "_";
+ }
+ }
+ cout << endl;
+}
+
+5) for (int i = 1; i <= 3; ++i) {
+ for (int j = 1; j <= 5; ++j) {
+ if ( (i + j) % 2 == 0) {
+ cout << "*";
+ } else {
+ cout << " ";
+ }
+ }
+ cout << endl;
+}

@@ -1,0 +1,40 @@
+ 1) int s = 1;
+for (int n = 1; n <= 5; ++n) {
+ s = s + n;
+ cout << s << " ";
+}
+s   n   n <= 5  print s
+1   1   ok      2
+2   2   ok      4
+4   3   ok      7
+7   4   ok      11
+11  5   ok      16
+16  6   nok
+
+2) int s = 1;
+for (int n = 1; n <= 10;) {
+ n = n + 2;
+ s = s + n;
+ cout << s << " "
+}
+n   s   n<=10   print s
+3   4   ok      4
+5   9   ok      9
+7   16  ok      16
+9   25  ok      25
+11  36  ok      36  
+
+3) int s = 1;
+int n;
+for (n = 1; n <= 5; n+=2) {
+ s = s + n;
+}
+
+cout << s << " " << n;
+
+n   s   n<=5    print
+1   2   ok
+3   5   ok
+5   10  ok
+7       nok
+                10 7
