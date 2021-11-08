@@ -43,7 +43,7 @@ int main() {
 		for (int s = 0; s < h_pyramide - h; ++s) {
 			cout << " ";
 		}
-		for (int e = 1; e <= h*2-1; ++e) {
+		for (int e = 1; e <= h * 2 - 1; ++e) {
 			cout << "*";
 		}
 		cout << endl;
