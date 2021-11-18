@@ -1,0 +1,20 @@
+void f(char); // fonction I
+void f(int); // fonction II
+void f(float); // fonction III
+
+bool b = true;
+char c = 'A';
+short s = 1;
+int i = 2;
+float x = 3.f;
+double y = 4.0;
+
+Les appels suivants sont-ils corrects et, si oui, quelles seront les fonctions effectivement
+appelées et les conversions éventuelles mises en œuvre ?
+
+1) f(b);
+2) f(c);
+3) f(s);
+4) f(i);
+5) f(x);
+6) f(y);

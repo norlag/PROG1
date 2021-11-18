@@ -1,0 +1,33 @@
+#include <cstdlib>
+#include <iostream>
+
+using namespace std;
+
+int a, b;
+
+int f(int c) {
+ int n = 0;
+ a = 1;
+ 
+ if (0 < 1) {
+ n = a + b;
+ }
+
+ return n;
+}
+
+int g(int c) {
+ int n = 0;
+ int a = 1;
+ if (n < f(1)) {
+    n = a + b;
+ }
+ return n;
+}
+
+int main() {
+ int i = 1;
+ int b = g(i);
+ cout << a + b + i << endl; // Affiche 3
+ return EXIT_SUCCESS;
+}

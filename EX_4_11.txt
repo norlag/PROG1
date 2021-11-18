@@ -14,7 +14,7 @@ int main() {
 	f(C);
 	f(n);
 	f(x);
-	g(C);
+	g(C); // 1. On ne peut pas changer un const par une référence
 	g(n);
 	g(x);
 	h(C);
