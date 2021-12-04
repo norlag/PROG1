@@ -49,10 +49,10 @@ bool contient(int first_tab[], size_t first_tab_size, int second_tab[], size_t s
 {
 	bool found;
 
-	for(int i = 0; i < first_tab_size; ++i)
+	for(size_t i = 0; i < first_tab_size; ++i)
 	{
 		found = false;
-		for(int j = 0; j < second_tab_size; ++j)
+		for(size_t j = 0; j < second_tab_size; ++j)
 		{
 			if(first_tab[i] == second_tab[j])
 			{
