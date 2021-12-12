@@ -1,43 +1,52 @@
-/*
-  ---------------------------------------------------------------------------
-  Fichier     : main.cpp
-  Nom du labo : PROG1
-  Auteur(s)   : Sebastian Schneider
-  Date        : 28.09.21
-  But         : Installer et configurer l’environnement de développement
-  Remarque(s) : Aucune
-  Compilateur : MinGW-W64 8.1.0
-  ---------------------------------------------------------------------------
-*/
-
-#include <cstdlib>
-#include <iomanip>
 #include <iostream>
+#include <cstdlib>
 #include <vector>
+#include <algorithm>
+#include <random>
+#include <ctime>
 
 using namespace std;
-
-void afficher(const vector<int>& v) {
-   cout << "[ ";
-   for (auto i = v.begin(); i != v.end(); ++i) {
-      if (i != v.begin()) cout << ", ";
-      cout << *i;
-   }
-   cout << " ]";
-}
-
-void comparer(const vector<int>& v1, const vector<int>& v2) {
-   afficher(v1);
-   cout << (v1 == v2 ? " = " : v1 < v2 ? " < " : " > ");
-   afficher(v2);
-   cout << endl;
-}
+void afficherTableau(vector<int> v);
 
 int main() {
-   comparer({1, 2, 3}, {1, 2, 3});
-   comparer({1, 1, 3}, {1, 2, 3});
-   comparer({1, 3, 1}, {1, 2, 3});
-   comparer({1, 2, 3, 4}, {1, 2, 3});
-   comparer({1, 2, 2, 4}, {1, 2, 3});
-   comparer({1, 2, 4, 4}, {1, 2, 3});
+  
+  srand(unsigned(time(nullptr)));
+  vector<int> v;
+  v.resize(100);
+  generate(v.begin(), v.end(), rand);
+  afficherTableau(v);
+  
+  bool sorted = false;
+  auto rng = default_random_engine {};
+  size_t essais = 0;
+  
+  
+  while(not(sorted)) {
+    //cout << "Essai " << ++essais << endl;
+    shuffle(v.begin(), v.end(), rng);
+    for(size_t i = 0 ; i < v.size() - 1 ; ++i) {
+      if (v[i] < v[i+1]) {
+        sorted = true;
+      } else {
+        sorted = false;
+        break;
+      }
+    }
+  }
+  
+  cout << "Reussi !" << endl;
+  afficherTableau(v);
+  
+  return EXIT_SUCCESS;
+}
+
+void afficherTableau(vector<int> v) {
+  cout << "[";
+  for(size_t i = 0; i < v.size() ; i++){
+    if(i != 0) {
+     cout << ", ";
+    }
+    cout << v[i];
+  }
+  cout << "]";
 }
